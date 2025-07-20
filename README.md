@@ -1,24 +1,33 @@
+# NFT Marketplace UI
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Environment Variables
 
-First, run the development server:
+Make sure that your .env.local (or any environment file) includes the following variables in order to run this project locally:
+NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID: you can get one from [WalletConnect Cloud](https://cloud.walletconnect.com/)
+CIRCLE_API_KEY: you can get one from [Circle Developer Portal](https://console.circle.com/api-keys)
+ENABLE_COMPLIANCE_CHECK: set it to true to allow compliance check
+
+## Setup
 
 ```bash
+git clone https://github.com/Lyes-Boudjabout/nft-marketplace-ui
+cd nft-marketplace-ui
+npm install
+npm run anvil
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Add Anvil to your metamask
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add the following network to your metamask:
+- Name: Anvil
+- RPC URL: http://127.0.0.1:8545
+- Chain ID: 31337
+- Currency Symbol: ETH
+
 
 ## Learn More
 
