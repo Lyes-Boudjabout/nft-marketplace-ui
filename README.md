@@ -5,9 +5,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Environment Variables
 
 Make sure that your .env.local (or any environment file) includes the following variables in order to run this project locally:
-NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID: you can get one from [WalletConnect Cloud](https://cloud.walletconnect.com/)
-CIRCLE_API_KEY: you can get one from [Circle Developer Portal](https://console.circle.com/api-keys)
-ENABLE_COMPLIANCE_CHECK: set it to true to allow compliance check
+`NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID`: you can get one from [WalletConnect Cloud](https://cloud.walletconnect.com/)
+
+`CIRCLE_API_KEY`: you can get one from [Circle Developer Portal](https://console.circle.com/api-keys)
+
+`ENABLE_COMPLIANCE_CHECK`: set it to true to allow compliance check
 
 ## Setup
 
