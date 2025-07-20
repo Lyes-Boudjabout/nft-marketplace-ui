@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { useAccount } from "wagmi";
 import { 
     FaGithub,
     FaFacebook, 
@@ -13,9 +16,19 @@ import {
     FaPrint,
     FaDiscord
 } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
-    return (
+    const { isConnected } = useAccount();
+    const [hasMounted, setHasMounted] = useState(false);
+    
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+    if (!hasMounted) return null;
+    
+    return ( isConnected &&
         <footer className="p-15 pb-6 bg-[#F7EDD9] mt-25">
             <hr />
                 <div className="flex justify-between p-2 mx-20">

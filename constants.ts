@@ -1,3 +1,5 @@
+import { NFT } from "./types"
+
 interface ContractsConfig {
     [chainId: number]: {
         usdc: string
@@ -15,6 +17,41 @@ export const chainsToContracts: ContractsConfig = {
         moodNft: "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
     },
 }
+
+export const tokens: NFT[] = [
+    {
+      seller: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenNumber: 0,
+      contractAddress: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      tokenPrice: 10000
+    },
+    {
+      seller: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenNumber: 1,
+      contractAddress: "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      tokenPrice: 20000
+    },
+    {
+      seller: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenNumber: 2,
+      contractAddress: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenPrice: 15000
+    },
+    {
+      seller: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenNumber: 3,
+      contractAddress: "0x134957623cd7a15C25907acD220a984D79A25516",
+      tokenPrice: 9000
+    },
+    {
+      seller: "0x551C7733E5ff92F5fFFb7d2f78D306176774D218",
+      tokenNumber: 4,
+      contractAddress: "0x134957623cd7a15C25907acD220a984D79A25516",
+      tokenPrice: 10000
+    },
+]
+
+export const supportedChainIds: number[] = [31337];
 
 export const erc20Abi = [
     {

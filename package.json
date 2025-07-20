@@ -17,12 +17,14 @@
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.8",
     "@tanstack/react-query": "^5.83.0",
+    "@types/uuid": "^10.0.0",
     "@wagmi/core": "^2.17.3",
     "next": "15.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
-    "viem": "^2.32.0",
+    "uuid": "^11.1.0",
+    "viem": "^2.32.1",
     "wagmi": "^2.15.7"
   },
   "devDependencies": {

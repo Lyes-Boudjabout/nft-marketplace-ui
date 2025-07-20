@@ -45,17 +45,16 @@ export default function Header() {
                     A non-custodial, permissionless NFT Marketplace
                 </em>
             </p>
-            <div className="flex justify-center items-center space-x-4">
-                {isConnected && 
-                    <button 
-                        className="bg-white px-6 py-2 rounded-xl shadow-lg hover:shadow-md hover:shadow-neutral-600 transition-shadow"
-                    >
-                        <Link href="/cake-nft">
-                            Cake NFT
-                        </Link>
-                    </button>}
-                <ConnectButton/>
-            </div>
+            {isConnected && 
+                <button 
+                    className="bg-white px-6 py-2 rounded-xl shadow-lg hover:shadow-md hover:shadow-neutral-600 transition-shadow"
+                >
+                    <Link href="/cake-nft">
+                        Cake NFT
+                    </Link>
+                </button>
+            }
+            <ConnectButton/>
         </header>
     )
 }
